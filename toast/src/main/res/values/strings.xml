@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LearnToastAndNotification</string>
+    <string name="show_toast_short">显示一个简短的Toast</string>
+    <string name="show_toast_long">显示一个较长的Toast</string>
+    <string name="show_toast_image">显示一个带图片的Toast</string>
+</resources>
