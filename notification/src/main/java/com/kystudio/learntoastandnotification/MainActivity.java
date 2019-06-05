@@ -2,26 +2,23 @@ package com.kystudio.learntoastandnotification;
 
 import android.app.Notification;
 import android.app.NotificationManager;
-import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.NotificationCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.NotificationCompat;
 import android.view.View;
 import android.widget.Button;
 
-import static android.content.Context.NOTIFICATION_SERVICE;
-
 public class MainActivity extends AppCompatActivity {
-    private Button btnCreateNotification;
     public static final int NOTIFICATION_ID = 1011;
     public int counter;
+    private Button btnCreateNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnCreateNotification = (Button) findViewById(R.id.btnCreateNotification);
+        btnCreateNotification = findViewById(R.id.btnCreateNotification);
         btnCreateNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
